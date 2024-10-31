@@ -34,7 +34,7 @@ export const productos = [
   },
   {
     id: 5,
-    nombre: "Paraguas",
+    nombre: "Producto",
     categoria: "Otros",
     precio: 350.0,
     descripcion: "Perfecto para días lluviosos.",
