@@ -1,7 +1,7 @@
 import { useParams } from 'react-router-dom';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { productos as listaProductos } from '../data';
-import { FaTruck, FaChevronDown, FaChevronUp, FaBoxes } from 'react-icons/fa'; // Importamos el nuevo icono
+import { FaTruck, FaChevronDown, FaChevronUp, FaBoxes } from 'react-icons/fa';
 
 function DetalleProducto() {
   const { id } = useParams(); // Obtener el ID del producto desde la URL
@@ -10,6 +10,14 @@ function DetalleProducto() {
   const [envioAbierto, setEnvioAbierto] = useState(false); // Estado para el acordeón de detalles de envío
 
   const toggleEnvio = () => setEnvioAbierto((prev) => !prev); // Alternar visibilidad del contenido
+
+  useEffect(() => {
+    // Scroll automático al cargar la vista de detalles
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth', // Animación de scroll suave
+    });
+  }, []);
 
   if (!producto) {
     return <p className="text-center mt-4">Producto no encontrado.</p>;

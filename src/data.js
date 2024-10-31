@@ -40,4 +40,68 @@ export const productos = [
     descripcion: "Perfecto para días lluviosos.",
     imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
   },
+  {
+    id: 6,
+    nombre: "Producto",
+    categoria: "Otros",
+    precio: 350.0,
+    descripcion: "Perfecto para días lluviosos.",
+    imagen: "https://i.imgur.com/dIZ69Ig.jpeg", // Ruta desde public
+  },
+  {
+    id: 7,
+    nombre: "Producto",
+    categoria: "Otros",
+    precio: 350.0,
+    descripcion: "Perfecto para días lluviosos.",
+    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+  },
+  {
+    id: 8,
+    nombre: "Producto",
+    categoria: "Otros",
+    precio: 350.0,
+    descripcion: "Perfecto para días lluviosos.",
+    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+  },
+  {
+    id: 9,
+    nombre: "Producto",
+    categoria: "Otros",
+    precio: 350.0,
+    descripcion: "Perfecto para días lluviosos.",
+    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+  },
+  {
+    id: 10,
+    nombre: "Producto",
+    categoria: "Otros",
+    precio: 350.0,
+    descripcion: "Perfecto para días lluviosos.",
+    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+  },
+  {
+    id: 11,
+    nombre: "Producto",
+    categoria: "Otros",
+    precio: 350.0,
+    descripcion: "Perfecto para días lluviosos.",
+    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+  },
+  {
+    id: 12,
+    nombre: "Producto",
+    categoria: "Otros",
+    precio: 350.0,
+    descripcion: "Perfecto para días lluviosos.",
+    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+  },
+  {
+    id: 13,
+    nombre: "Producto",
+    categoria: "Otros",
+    precio: 350.0,
+    descripcion: "Perfecto para días lluviosos.",
+    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+  },
 ];

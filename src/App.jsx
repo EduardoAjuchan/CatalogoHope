@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
-import { Routes, Route, useNavigate, useLocation } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
+import { Routes, Route, useNavigate } from 'react-router-dom';
+import { FaBars, FaTimes, FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 import { productos as listaProductos } from './data';
 import Carrusel from './components/Carrusel';
 import Catalogo from './components/Catalogo';
@@ -12,32 +12,27 @@ import './index.css';
 
 function App() {
   const [menuAbierto, setMenuAbierto] = useState(false);
-  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState(
-    sessionStorage.getItem('categoriaSeleccionada') || 'Todos'
-  );
+  const [categoriaSeleccionada, setCategoriaSeleccionada] = useState('Todos');
   const [productosFiltrados, setProductosFiltrados] = useState(listaProductos);
-  const [busqueda, setBusqueda] = useState(sessionStorage.getItem('busqueda') || '');
+  const [busqueda, setBusqueda] = useState('');
   const [resultados, setResultados] = useState([]);
-  const [productoSeleccionado, setProductoSeleccionado] = useState(null);
-
-  const catalogoRef = useRef(null);
+  const [paginaActual, setPaginaActual] = useState(1);
+  const productosPorPagina = 10;
   const navigate = useNavigate();
-  const location = useLocation();
+  const inputBusquedaRef = useRef(null);
 
   const categorias = ['Todos', ...new Set(listaProductos.map((p) => p.categoria))];
 
   useEffect(() => {
-    if (categoriaSeleccionada === 'Todos') {
-      setProductosFiltrados(listaProductos);
-    } else {
-      const filtrados = listaProductos.filter(
-        (producto) => producto.categoria === categoriaSeleccionada
-      );
-      setProductosFiltrados(filtrados);
-    }
-    setProductoSeleccionado(null);
-    setBusqueda('');
+    const filtrados = categoriaSeleccionada === 'Todos'
+      ? listaProductos
+      : listaProductos.filter((producto) => producto.categoria === categoriaSeleccionada);
+
+    setProductosFiltrados(filtrados);
     setResultados([]);
+    setBusqueda('');
+    setPaginaActual(1);
+    if (menuAbierto) setMenuAbierto(false);
   }, [categoriaSeleccionada]);
 
   const handleBusqueda = (event) => {
@@ -48,37 +43,41 @@ function App() {
       producto.nombre.toLowerCase().includes(valorBusqueda)
     );
     setResultados(coincidencias);
-    sessionStorage.setItem('busqueda', valorBusqueda); // Guardar búsqueda en sessionStorage
   };
 
+  useEffect(() => {
+    if (busqueda && inputBusquedaRef.current) {
+      inputBusquedaRef.current.focus();
+    }
+  }, [busqueda, resultados]);
+
   const limpiarBusqueda = () => {
-    setBusqueda(''); // Limpiar búsqueda
-    setResultados([]); // Limpiar sugerencias
+    setBusqueda('');
+    setResultados([]);
   };
 
   const handleSeleccionProducto = (producto) => {
-    setProductoSeleccionado(producto);
-    sessionStorage.setItem('categoriaSeleccionada', categoriaSeleccionada); // Guardar categoría
-    sessionStorage.setItem('busqueda', busqueda); // Guardar búsqueda
+    limpiarBusqueda();
     setMenuAbierto(false);
-    limpiarBusqueda(); // Ocultar las sugerencias
     navigate(`/producto/${producto.id}`);
   };
 
   const handleCategoriaSeleccionada = (categoria) => {
     setCategoriaSeleccionada(categoria);
-    sessionStorage.setItem('categoriaSeleccionada', categoria); // Guardar en sessionStorage
-    setProductoSeleccionado(null);
-    setMenuAbierto(false);
+    limpiarBusqueda();
+    if (menuAbierto) setMenuAbierto(false);
     navigate('/');
   };
 
   const toggleMenu = () => setMenuAbierto((prev) => !prev);
 
-  const regresar = () => {
-    const categoria = sessionStorage.getItem('categoriaSeleccionada') || 'Todos';
-    setCategoriaSeleccionada(categoria);
-    navigate('/');
+  const indiceInicio = (paginaActual - 1) * productosPorPagina;
+  const productosPaginaActual = productosFiltrados.slice(indiceInicio, indiceInicio + productosPorPagina);
+
+  const numeroDePaginas = Math.ceil(productosFiltrados.length / productosPorPagina);
+
+  const cambiarPagina = (numeroPagina) => {
+    setPaginaActual(numeroPagina);
   };
 
   const Layout = ({ children }) => (
@@ -95,6 +94,7 @@ function App() {
             placeholder="Buscar"
             value={busqueda}
             onChange={handleBusqueda}
+            ref={inputBusquedaRef}
             className="border rounded-md p-2 w-full"
           />
           {busqueda && resultados.length > 0 && (
@@ -146,6 +146,7 @@ function App() {
             placeholder="Buscar"
             value={busqueda}
             onChange={handleBusqueda}
+            ref={inputBusquedaRef}
             className="w-full border rounded-md p-2 mb-4"
           />
           {busqueda && resultados.length > 0 && (
@@ -193,9 +194,40 @@ function App() {
         element={
           <Layout>
             <Carrusel />
-            <div ref={catalogoRef} className="mt-8 px-4 flex-grow">
-              {productosFiltrados.length > 0 ? (
-                <Catalogo productos={productosFiltrados} onProductoClick={handleSeleccionProducto} />
+            <div className="mt-8 px-4 flex-grow">
+              {productosPaginaActual.length > 0 ? (
+                <>
+                  <Catalogo productos={productosPaginaActual} onProductoClick={handleSeleccionProducto} />
+                  <div className="paginacion flex justify-center mt-6 mb-8 space-x-2">
+                    <button
+                      onClick={() => cambiarPagina(paginaActual - 1)}
+                      disabled={paginaActual === 1}
+                      className="p-2 w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 disabled:opacity-50 flex items-center justify-center"
+                    >
+                      <FaArrowLeft className="text-lg" />
+                    </button>
+                    {Array.from({ length: numeroDePaginas }, (_, i) => (
+                      <button
+                        key={i + 1}
+                        onClick={() => cambiarPagina(i + 1)}
+                        className={`p-2 w-10 h-10 rounded-full flex items-center justify-center ${
+                          paginaActual === i + 1
+                            ? 'bg-[#38652d] text-white'
+                            : 'bg-gray-200 hover:bg-gray-300'
+                        }`}
+                      >
+                        {i + 1}
+                      </button>
+                    ))}
+                    <button
+                      onClick={() => cambiarPagina(paginaActual + 1)}
+                      disabled={paginaActual === numeroDePaginas}
+                      className="p-2 w-10 h-10 rounded-full bg-gray-200 hover:bg-gray-300 disabled:opacity-50 flex items-center justify-center"
+                    >
+                      <FaArrowRight className="text-lg" />
+                    </button>
+                  </div>
+                </>
               ) : (
                 <p className="text-center">No hay productos disponibles.</p>
               )}
@@ -207,7 +239,7 @@ function App() {
         path="/producto/:id"
         element={
           <Layout>
-            <DetalleProducto onBack={regresar} />
+            <DetalleProducto />
           </Layout>
         }
       />
