@@ -18,90 +18,90 @@ export const productos = [
   },
   {
     id: 3,
-    nombre: "Bebida de Frutas",
-    categoria: "Bebida",
+    nombre: "Bolitas de chocolate",
+    categoria: "Comida",
     precio: 300.0,
-    descripcion: "Bebida de frutas naturales.",
-    imagen: "https://i.imgur.com/xPyuWBA.jpeg", // Ruta desde public
-  },
-  {
-    id: 4,
-    nombre: "Tijeras",
-    categoria: "Papelería",
-    precio: 500.0,
-    descripcion: "Tijeras de acero inoxidable.",
+    descripcion: "Dolitas de nuez cubiertas de chocolate",
     imagen: "https://i.imgur.com/JfwFJ8j.jpeg", // Ruta desde public
   },
   {
-    id: 5,
-    nombre: "Producto",
-    categoria: "Otros",
-    precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
+    id: 4,
+    nombre: "Dulces chiclosos",
+    categoria: "Dulces",
+    precio: 10.0,
+    descripcion: "Dulces chiclosos con sabor a frutas",
     imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
   },
   {
-    id: 6,
-    nombre: "Producto",
-    categoria: "Otros",
+    id: 5,
+    nombre: "Dulces de uva",
+    categoria: "Dulces",
     precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
+    descripcion: "Dulces coreanos con sabor a uva",
+    imagen: "https://i.imgur.com/xPyuWBA.jpeg", // Ruta desde public
+  },
+  {
+    id: 6,
+    nombre: "Galletas de fresa",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Galletas coreanas con sabor a fresa",
     imagen: "https://i.imgur.com/dIZ69Ig.jpeg", // Ruta desde public
   },
   {
     id: 7,
-    nombre: "Producto",
-    categoria: "Otros",
+    nombre: "Galletas con chispas de chocolate",
+    categoria: "Comida",
     precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
-    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+    descripcion: "Galletas coreanas con chispas de chocolate",
+    imagen: "https://i.imgur.com/fWFPAzu.jpeg", // Ruta desde public
   },
   {
     id: 8,
-    nombre: "Producto",
-    categoria: "Otros",
+    nombre: "Honguitos de chocolate",
+    categoria: "Comida",
     precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
-    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+    descripcion: "Honguitos de chocolate coreanos",
+    imagen: "https://i.imgur.com/05P7F21.jpeg", // Ruta desde public
   },
   {
     id: 9,
-    nombre: "Producto",
-    categoria: "Otros",
+    nombre: "Caramelos de menta",
+    categoria: "Dulces",
     precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
-    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+    descripcion: "Caramelos coreanos de menta",
+    imagen: "https://i.imgur.com/LhjiXz1.jpeg", // Ruta desde public
   },
   {
     id: 10,
-    nombre: "Producto",
-    categoria: "Otros",
+    nombre: "Mini galletas de chocolate",
+    categoria: "Comida",
     precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
+    descripcion: "Mini galletas coreanas rellenas de chocolate",
     imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
   },
   {
     id: 11,
-    nombre: "Producto",
-    categoria: "Otros",
+    nombre: "Sopa ramen paldo de mariscos (picante)",
+    categoria: "Comida",
     precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
-    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+    descripcion: "Sopa ramen coreana en tazón de mariscos picante",
+    imagen: "https://i.imgur.com/t1wF0yb.jpeg", // Ruta desde public
   },
   {
     id: 12,
-    nombre: "Producto",
-    categoria: "Otros",
+    nombre: "Pastelitos de pez",
+    categoria: "Comida",
     precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
-    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+    descripcion: "Pastelitos coreanos de pez con relleno de chocolate",
+    imagen: "https://i.imgur.com/NT3JefJ.jpeg", // Ruta desde public
   },
   {
     id: 13,
-    nombre: "Producto",
-    categoria: "Otros",
+    nombre: "Dulces coreanos de leche",
+    categoria: "Dulces",
     precio: 350.0,
-    descripcion: "Perfecto para días lluviosos.",
-    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+    descripcion: "Deliciosos dulces coreanos de leche",
+    imagen: "https://i.imgur.com/mObWeMg.jpeg", // Ruta desde public
   },
 ];
