@@ -104,4 +104,102 @@ export const productos = [
     descripcion: "Deliciosos dulces coreanos de leche",
     imagen: "https://i.imgur.com/mObWeMg.jpeg", // Ruta desde public
   },
+  {
+    id: 14,
+    nombre: "Dulces coreanos de fresa",
+    categoria: "Dulces",
+    precio: 350.0,
+    descripcion: "Deliciosos dulces coreanos de fresa",
+    imagen: "https://i.imgur.com/Cqv3ihq.jpeg", // Ruta desde public
+  },
+  {
+    id: 15,
+    nombre: "Cheetos coreanos de especias picantes",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Cheetos coreanos con sabor a especias picantes y queso",
+    imagen: "https://i.imgur.com/tSjsDKh.jpeg", // Ruta desde public
+  },
+  {
+    id: 16,
+    nombre: "Cheetos coreanos de barbacoa",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Deliciosos Cheetos coreanos de barbacoa y queso",
+    imagen: "https://i.imgur.com/B0ebLcD.jpeg", // Ruta desde public
+  },
+  {
+    id: 17,
+    nombre: "Sopa ramen paldo de verduras (picante)",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Deliciosa sopa ramen coreana en tazón de verduras picante",
+    imagen: "https://i.imgur.com/9fgJ9al.jpeg", // Ruta desde public
+  },
+  {
+    id: 18,
+    nombre: "Sopa ramen paldo de res (picante)",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Deliciosa sopa ramen coreana en tazón de res picante",
+    imagen: "https://i.imgur.com/l3hz53C.jpeg", // Ruta desde public
+  },
+  {
+    id: 19,
+    nombre: "Snack coreano de camote",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Delicioso snack coreano de camote",
+    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
+  },
+  {
+    id: 20,
+    nombre: "Pocky Pepero (variedad de sabores)",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Deliciosos palitos de galleta coreanos con variedad de sabores",
+    imagen: "https://i.imgur.com/PAAFUbn.jpeg", // Ruta desde public
+  },
+  {
+    id: 21,
+    nombre: "Snack coreano de queso",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Delicioso snack coreano de queso",
+    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
+  },
+  {
+    id: 22,
+    nombre: "Snack coreano de pollo",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Delicioso snack coreano de pollo",
+    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
+  },
+  {
+    id: 23,
+    nombre: "Snack coreano de res",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Delicioso snack coreano de res",
+    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
+  },
+  {
+    id: 24,
+    nombre: "Snack coreano de cangrejo",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Delicioso snack coreano de cangrejo",
+    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
+  },
+  {
+    id: 25,
+    nombre: "Snack coreano de camarón",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Delicioso snack coreano de camarón",
+    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
+  },
+ 
+ 
 ];
