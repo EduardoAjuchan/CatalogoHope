@@ -160,46 +160,6 @@ export const productos = [
     descripcion: "Deliciosos palitos de galleta coreanos con variedad de sabores",
     imagen: "https://i.imgur.com/PAAFUbn.jpeg", // Ruta desde public
   },
-  {
-    id: 21,
-    nombre: "Snack coreano de queso",
-    categoria: "Comida",
-    precio: 350.0,
-    descripcion: "Delicioso snack coreano de queso",
-    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
-  },
-  {
-    id: 22,
-    nombre: "Snack coreano de pollo",
-    categoria: "Comida",
-    precio: 350.0,
-    descripcion: "Delicioso snack coreano de pollo",
-    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
-  },
-  {
-    id: 23,
-    nombre: "Snack coreano de res",
-    categoria: "Comida",
-    precio: 350.0,
-    descripcion: "Delicioso snack coreano de res",
-    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
-  },
-  {
-    id: 24,
-    nombre: "Snack coreano de cangrejo",
-    categoria: "Comida",
-    precio: 350.0,
-    descripcion: "Delicioso snack coreano de cangrejo",
-    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
-  },
-  {
-    id: 25,
-    nombre: "Snack coreano de camarón",
-    categoria: "Comida",
-    precio: 350.0,
-    descripcion: "Delicioso snack coreano de camarón",
-    imagen: "https://i.imgur.com/8i4nSsN.jpeg", // Ruta desde public
-  },
- 
+  
  
 ];
