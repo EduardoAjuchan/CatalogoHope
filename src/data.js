@@ -78,7 +78,7 @@ export const productos = [
     categoria: "Comida",
     precio: 350.0,
     descripcion: "Mini galletas coreanas rellenas de chocolate",
-    imagen: "https://i.imgur.com/6EcuyP5.jpeg", // Ruta desde public
+    imagen: "https://i.imgur.com/xLqYDg2.jpeg", // Ruta desde public
   },
   {
     id: 11,
@@ -157,9 +157,32 @@ export const productos = [
     nombre: "Pocky Pepero (variedad de sabores)",
     categoria: "Comida",
     precio: 350.0,
-    descripcion: "Deliciosos palitos de galleta coreanos con variedad de sabores",
+    descripcion: "Deliciosos palitos de galleta coreanos con variedad de sabores, Fresa, chocolate, almendra, crunchy",
     imagen: "https://i.imgur.com/PAAFUbn.jpeg", // Ruta desde public
   },
+  {
+    id: 21,
+    nombre: "Sopa ramen de res (tazón)",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Deliciosa sopa ramen coreana en tazón de res",
+    imagen: "https://i.imgur.com/zHC8955.jpeg", // Ruta desde public
+  },
+  {
+    id: 22,
+    nombre: "Snacks papitas de camote",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Deliciosos snacks coreanos de papitas de camote",
+    imagen: "https://i.imgur.com/6nZvKtU.jpeg", // Ruta desde public
+  },
+  {
+    id: 23,
+    nombre: "Sopa ramen de res y verduras (tazón)",
+    categoria: "Comida",
+    precio: 350.0,
+    descripcion: "Deliciosa sopa ramen coreana en tazón de res y verduras",
+    imagen: "https://i.imgur.com/Xf7X23Q.jpeg", // Ruta desde public
+  },
   
- 
 ];
