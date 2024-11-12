@@ -13,7 +13,7 @@ function Carrusel() {
     infiniteLoop
     showThumbs={false}
     showStatus={false}
-    interval={3000}
+    interval={5000}
   >
     <div>
       <img src={imagen4} alt="Imagen 1" />
