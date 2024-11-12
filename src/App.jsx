@@ -7,7 +7,7 @@ import Catalogo from './components/Catalogo';
 import BotonWhatsApp from './components/BotonWhatsApp';
 import Footer from './components/Footer';
 import DetalleProducto from './components/DetalleProducto';
-import logo from './assets/logo.webp';
+import logo from './assets/logoxmas.webp';
 import './index.css';
 
 function App() {
