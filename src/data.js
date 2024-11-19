@@ -105,22 +105,22 @@ export const productos = [
     descripcion: "Deliciosos dulces coreanos de fresa",
     imagen: "https://i.imgur.com/Cqv3ihq.jpeg", // Ruta desde public
   },
-  {
+  /*{
     id: 14,
     nombre: "Cheetos coreanos de especias picantes",
     categoria: "Comida",
     precio: 27.0,
     descripcion: "Cheetos coreanos con sabor a especias picantes y queso",
     imagen: "https://i.imgur.com/tSjsDKh.jpeg", // Ruta desde public
-  },
-  {
+  },*/
+  /*{
     id: 15,
     nombre: "Cheetos coreanos de barbacoa",
     categoria: "Comida",
     precio: 27.0,
     descripcion: "Deliciosos Cheetos coreanos de barbacoa y queso",
     imagen: "https://i.imgur.com/B0ebLcD.jpeg", // Ruta desde public
-  },
+  },*/
  /* {
     id: 16,
     nombre: "Sopa ramen paldo de verduras (picante)",
