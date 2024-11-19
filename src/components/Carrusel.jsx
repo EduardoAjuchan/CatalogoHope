@@ -4,6 +4,7 @@ import imagen1 from '../assets/1.png';
 import imagen2 from '../assets/2.png';
 import imagen3 from '../assets/3.png';
 import imagen4 from '../assets/Promo1.png';
+import imagen5 from '../assets/Promo2.png';
 
 function Carrusel() {
   return (
@@ -19,7 +20,7 @@ function Carrusel() {
       <img src={imagen4} alt="Imagen 1" />
     </div>
     <div>
-      <img src={imagen2} alt="Imagen 2" />
+      <img src={imagen5} alt="Imagen 2" />
     </div>
     <div>
       <img src={imagen3} alt="Imagen 3" />
