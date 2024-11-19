@@ -8,14 +8,14 @@ export const productos = [
     descripcion: "Deliciosos alfajores coreanos de fresa con relleno de crema.",
     imagen: "https://i.imgur.com/Rj4WjDF.jpeg", // Ruta desde public
   },
-  {
+ /* {
     id: 2,
     nombre: "Aros de Cebolla",
     categoria: "Comida",
     precio: 28.0,
     descripcion: "Snack de aros de cebolla",
     imagen: "https://i.imgur.com/XkmvWZ2.png", // Ruta desde public
-  },
+  },*/
   {
     id: 3,
     nombre: "Bolitas de chocolate",
