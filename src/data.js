@@ -80,14 +80,14 @@ export const productos = [
     descripcion: "Mini galletas coreanas rellenas de chocolate",
     imagen: "https://i.imgur.com/xLqYDg2.jpeg", // Ruta desde public
   },
-  {
+ /* {
     id: 11,
     nombre: "Sopa ramen paldo de mariscos (picante)",
     categoria: "Comida",
     precio: 26.0,
     descripcion: "Sopa ramen coreana en tazón de mariscos picante",
     imagen: "https://i.imgur.com/t1wF0yb.jpeg", // Ruta desde public
-  },
+  },*/
   
   {
     id: 12,
@@ -121,15 +121,15 @@ export const productos = [
     descripcion: "Deliciosos Cheetos coreanos de barbacoa y queso",
     imagen: "https://i.imgur.com/B0ebLcD.jpeg", // Ruta desde public
   },
-  {
+ /* {
     id: 16,
     nombre: "Sopa ramen paldo de verduras (picante)",
     categoria: "Comida",
     precio: 26.0,
     descripcion: "Deliciosa sopa ramen coreana en tazón de verduras picante",
     imagen: "https://i.imgur.com/9fgJ9al.jpeg", // Ruta desde public
-  },
-  {
+  },*/
+  /*{
     id: 17,
     nombre: "Sopa ramen paldo de res (picante)",
     categoria: "Comida",
@@ -137,7 +137,7 @@ export const productos = [
     descripcion: "Deliciosa sopa ramen coreana en tazón de res picante",
     imagen: "https://i.imgur.com/l3hz53C.jpeg", // Ruta desde public
   },
- 
+ */
   {
     id: 18,
     nombre: "Pocky Pepero (variedad de sabores)",
